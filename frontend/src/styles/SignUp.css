@@ -1,0 +1,129 @@
+/* import tokens first (if you separated them into tokens.css) */
+/* @import "./tokens.css"; */
+
+* { box-sizing: border-box; }
+
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color-background);
+  font-family: var(--font-sans);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main container */
+.signup-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  padding: 32px 16px 50px;
+  gap: var(--signup-gap);
+}
+
+/* Logo (responsive) */
+.logo {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, var(--fs-logo)); /* scales on small screens */
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+/* Title */
+.title {
+  font-size: var(--fs-title);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: var(--fs-subtitle);
+  color: var(--muted-white);
+  margin-top: 6px;
+  margin-bottom: 22px;
+}
+
+/* Input fields (responsive width) */
+.input-box {
+  width: min(360px, 90%); /* replaces fixed 260px for better UX on small screens */
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  height: var(--input-height);
+  border-radius: var(--radius-pill);
+  border: none;
+  padding: 0 18px;
+  background-color: var(--input-bg);
+  color: var(--text);
+  font-size: var(--fs-input);
+  outline: none;
+  transition: box-shadow 150ms ease, border-color 150ms ease;
+}
+
+/* placeholder */
+.input-field::placeholder {
+  color: var(--x50-white);
+  font-size: var(--fs-input-ph);
+}
+
+/* Accessible focus */
+.input-field:focus {
+  box-shadow: 0 0 0 6px rgba(156,74,138,0.08); /* subtle halo derived from your accent */
+  border: 1px solid rgba(156,74,138,0.14);
+}
+
+/* Sign Up button */
+.signup-btn {
+  width: 120px;
+  height: var(--btn-height);
+  background-color: var(--accent);
+  color: var(--main-color-background);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  font-size: var(--fs-btn);
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.signup-btn:hover { opacity: 0.92; transform: translateY(-1px); }
+.signup-btn:active { transform: translateY(0); }
+
+/* Login text */
+.login-text {
+  margin-top: 18px;
+  font-size: var(--fs-small);
+  color: var(--muted-white);
+}
+
+.login-link {
+  color: var(--accent-600); /* uses the same hex you used */
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Small responsive tweaks */
+@media (min-width: 880px) {
+  .signup-container { padding-bottom: 80px; }
+  .input-box { width: var(--signup-width); }
+}
+
+/* Visually-hidden helper for accessibility */
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}

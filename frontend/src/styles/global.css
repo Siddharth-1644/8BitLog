@@ -1,0 +1,34 @@
+:root {
+  /* Colors (from your styleguide) */
+  --main-color-background: rgba(31, 29, 54, 1);   /* original */
+  --second-color: rgba(233, 166, 166, 1);         /* original (accent) */
+  --x50-white: rgba(255, 255, 255, 0.5);          /* placeholder opacity */
+
+  /* Derived / semantic colors */
+  --accent: var(--second-color);
+  --accent-600: #9c4a8a;                          /* you used this for login-link */
+  --input-bg: rgba(196,196,196,0.35);             /* slightly stronger than original #c4c4c459 */
+  --muted-white: rgba(255,255,255,0.7);           /* subtitle + small text opacity */
+  --text: #ffffff;
+
+  /* Typography (match sizes you used) */
+  --font-sans: "Open Sans", sans-serif;
+  --font-display: "Satoshi-Bold", sans-serif;
+
+  --fs-logo: 70px;    /* logo font-size you used */
+  --fs-title: 32px;
+  --fs-subtitle: 14px;
+  --fs-input: 13px;
+  --fs-input-ph: 11px;
+  --fs-btn: 14px;
+  --fs-small: 11px;
+
+  /* Radii / spacing */
+  --radius-pill: 30px;
+  --input-height: 40px;
+  --btn-height: 38px;
+
+  /* Layout helpers */
+  --signup-width: 260px;
+  --signup-gap: 15px;
+}
