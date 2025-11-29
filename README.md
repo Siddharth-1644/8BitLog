@@ -52,23 +52,22 @@ This project is actively being developed and will evolve into a full game-loggin
 - JSON Web Tokens  
 - Nodemon (development)  
 
-## 📁 Folder Structure
+## 📁 Project Structure
 8BitLog/
-├── frontend/
-│ └── src/
-│ └── Components/
-│ └── assets/
-│ └── styles/
-├── server/
-│ └── src/
-│ └── config/
-│ └── controllers/
-│ └── middlewares/
-│ └── models/
-│ └── routes/
-│ └── index.js
-│ └── .env
-
+├── 🌐 frontend/
+│   └── src/
+│       ├── ⚛️  Components/
+│       ├── 🖼️  assets/
+│       └── 💄 styles/
+└── 🖥️  server/
+├── src/
+│   ├── ⚙️  config/
+│   ├── 🎛️  controllers/
+│   ├── 🔒 middlewares/
+│   ├── 🗃️  models/
+│   └── 🛤️ routes/
+├── 🚀 index.js
+└── 🔑 .env
 
 
 ## 📌 Roadmap
