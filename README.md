@@ -53,7 +53,6 @@ This project is actively being developed and will evolve into a full game-loggin
 - Nodemon (development)  
 
 ## 📁 Project Structure
-## 📁 Folder Structure
 
 🌐 **8BitLog/**
 - 🖥️ **frontend/**
