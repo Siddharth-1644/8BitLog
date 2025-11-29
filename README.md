@@ -53,21 +53,23 @@ This project is actively being developed and will evolve into a full game-loggin
 - Nodemon (development)  
 
 ## 📁 Project Structure
-8BitLog
-├── frontend
-│   └── src
-│       ├── Components
-│       ├── assets
-│       └── styles
-└── server
-├── src
-│   ├── config
-│   ├── controllers
-│   ├── middlewares
-│   ├── models
-│   └── routes
-├── index.js
-└── .env
+## 📁 Folder Structure
+
+🌐 **8BitLog/**
+- 🖥️ **frontend/**
+  - 📁 **src/**
+    - ⚛️ **Components/**
+    - 🖼️ **assets/**
+    - 💅 **styles/**
+- 🖥️ **server/**
+  - 📁 **src/**
+    - ⚙️ **config/**
+    - 🎛️ **controllers/**
+    - 🔒 **middlewares/**
+    - 🗃️ **models/**
+    - 🛤️ **routes/**
+  - 🚀 **index.js**
+  - 🔑 **.env**
 
 
 ## 📌 Roadmap
