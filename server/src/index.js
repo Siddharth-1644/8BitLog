@@ -49,7 +49,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(morgan("dev"));
 
-// 🔥 Debug logger (temporary)
+
 app.use((req, res, next) => {
   console.log(`\n[INCOMING] ${req.method} ${req.originalUrl} from ${req.ip}`);
   console.log("  Headers:", {

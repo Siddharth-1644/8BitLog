@@ -127,3 +127,11 @@ body {
   padding: 0; margin: -1px; overflow: hidden;
   clip: rect(0,0,0,0); white-space: nowrap; border: 0;
 }
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;          /* space between logo + text */
+  margin-bottom: 8px; /* matches your existing spacing */
+}
